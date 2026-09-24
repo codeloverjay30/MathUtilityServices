@@ -42,6 +42,15 @@ local-packages
 .vscode-debug-eval.cs
 .vscode-debug-eval.*.cs
 
+# AI tools
+## GEMINI
+GEMINI.md
+## Cline
+.clinerules
+
+# repomix
+.repomixignore
+
 # scripts
 *.ps1
 *.psm1

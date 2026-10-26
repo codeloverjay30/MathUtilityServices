@@ -88,4 +88,20 @@ public readonly record struct Rectangle
             new Point(x, y),
             new Point(x + width, y + height));
     }
+
+    /// <summary>
+    /// Determines whether the specified point is contained within this rectangle.
+    /// The left and top edges are inclusive, while the right and bottom edges are exclusive.
+    /// </summary>
+    /// <param name="point">The point to evaluate.</param>
+    /// <returns>True if the point is inside the rectangle; otherwise, false.</returns>
+    public bool Contains(Point point)
+    {
+        return double.IsFinite(point.X)
+            && double.IsFinite(point.Y)
+            && point.X >= TopLeft.X
+            && point.X < BottomRight.X
+            && point.Y >= TopLeft.Y
+            && point.Y < BottomRight.Y;
+    }
 }

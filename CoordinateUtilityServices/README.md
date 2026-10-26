@@ -135,9 +135,18 @@ dotnet test .\CoordinateUtilityServices.Tests\CoordinateUtilityServices.Tests.cs
 + calculate the point for scaling.
 
 ## 2.0.0
+### Major update
 + Rename project name
 
 + Rename the namespace.
 
 ## 3.0.0
+### Added
 + Add `Rectangle` for detected region of OCR.
+
+## 3.1.0
+### Added
++ Add `NormalizedRectangle` for detected region of OCR.
+
+### update
++ Added `Contains` method that checks one point is in rectangle.
